@@ -1,125 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Woodworth Outdoors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Woodworth Outdoors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@300;400;500&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@300;400;500&display=swap');
 
-  :root{
-    --deep:#0f2a14;
-    --gold:#C9A84C;
-    --gold-light:#e0c06a;
-    --white:#ffffff;
-    --script:'Italianno',cursive;
-    --sans:'Montserrat',sans-serif;
-  }
+:root{
+  --deep:#0f2a14;
+  --gold:#C9A84C;
+  --gold-light:#e0c06a;
+  --white:#ffffff;
+  --script:'Italianno',cursive;
+  --sans:'Montserrat',sans-serif;
+}
 
-  body {
-    margin:0;
-    background:var(--deep);
-  }
+body {
+  margin:0;
+  background:var(--deep);
+  color:white;
+}
 
-  /* HERO */
-  .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(rgba(15,42,20,0.75), rgba(15,42,20,0.85)),
-      url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=85') center/cover no-repeat;
-  }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(15,42,20,0.75), rgba(15,42,20,0.85)),
+    url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=85') center/cover no-repeat;
+}
 
-  .hero-content {
-    position: relative;
-    text-align: center;
-    max-width: 900px;
-    padding: 0 20px;
-  }
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
 
-  .hero-eyebrow {
-    font-family: var(--sans);
-    font-size: 12px;
-    letter-spacing: 4px;
-    color: var(--gold);
-    margin-bottom: 20px;
-  }
+.hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
 
-  .hero h1 {
-    font-family: var(--script);
-    font-size: clamp(4rem, 8vw, 7rem);
-    color: var(--white);
-    margin-bottom: 10px;
-  }
+.hero h1 {
+  font-family: var(--script);
+  font-size: clamp(4rem, 8vw, 7rem);
+  margin-bottom: 10px;
+}
 
-  .hero h2 {
-    font-family: var(--script);
-    font-size: 2.5rem;
-    color: var(--gold);
-    margin-bottom: 20px;
-  }
+.hero h2 {
+  font-family: var(--script);
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
 
-  .hero-desc {
-    font-family: var(--sans);
-    font-size: 15px;
-    color: rgba(255,255,255,0.75);
-    line-height: 1.8;
-    margin-bottom: 40px;
-  }
+.hero-desc {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
 
-  .hero-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .btn-gold {
-    background: linear-gradient(to bottom, var(--gold-light), var(--gold));
-    color: #0f2a14;
-    padding: 14px 36px;
-    border-radius: 8px;
-    font-family: var(--script);
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
+.btn-gold {
+  background: linear-gradient(to bottom, var(--gold-light), var(--gold));
+  color: #0f2a14;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-family: var(--script);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
 
-  .btn-outline {
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    padding: 14px 36px;
-    border-radius: 8px;
-    font-family: var(--script);
-    font-size: 20px;
-    background: transparent;
-    cursor: pointer;
-  }
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-family: var(--script);
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+}
 
-  .hero-scroll {
-    position: absolute;
-    bottom: 30px;
-    text-align: center;
-    width: 100%;
-    font-family: var(--script);
-    color: var(--gold);
-    font-size: 18px;
-  }
-  </style>
+.hero-scroll {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--script);
+  color: var(--gold);
+}
+
+/* GENERAL SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--script);
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 30px;
+}
+
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.service-grid div {
+  padding: 40px;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  font-family: var(--script);
+  font-size: 1.8rem;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 600px;
+  margin: auto;
+  font-family: var(--sans);
+  color: rgba(255,255,255,0.7);
+  line-height:1.8;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+  background: rgba(201,168,76,0.1);
+}
+
+/* CONTACT */
+.contact p {
+  font-family: var(--sans);
+  margin:5px 0;
+}
+</style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
 
@@ -143,8 +203,52 @@
   </div>
 
   <div class="hero-scroll">
-    Scroll Down ↓
+    Scroll ↓
   </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div>Lawn Care</div>
+    <div>Landscaping</div>
+    <div>Hardscaping</div>
+    <div>Snow Removal</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>Family-Owned. Built on Trust.</h2>
+  <p>
+    Serving Jackson, NJ and surrounding areas for over 25 years,
+    Woodworth Outdoors delivers professional landscaping and outdoor solutions
+    with unmatched attention to detail.
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=600">
+    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600">
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Transform Your Property?</h2>
+  <button class="btn-gold">Request a Free Estimate</button>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 848-245-9463</p>
+  <p>📍 Jackson, New Jersey</p>
 </section>
 
 </body>
