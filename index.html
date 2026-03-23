@@ -1,116 +1,124 @@
-<!-- PREMIUM HERO -->
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@300;400;500&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Woodworth Outdoors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-:root{
-  --deep:#0f2a14;
-  --gold:#C9A84C;
-  --gold-light:#e0c06a;
-  --white:#ffffff;
-  --script:'Italianno',cursive;
-  --sans:'Montserrat',sans-serif;
-}
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@300;400;500&display=swap');
 
-/* HERO */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+  :root{
+    --deep:#0f2a14;
+    --gold:#C9A84C;
+    --gold-light:#e0c06a;
+    --white:#ffffff;
+    --script:'Italianno',cursive;
+    --sans:'Montserrat',sans-serif;
+  }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(rgba(15,42,20,0.75), rgba(15,42,20,0.85)),
-    url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=85') center/cover no-repeat;
-}
+  body {
+    margin:0;
+    background:var(--deep);
+  }
 
-.hero-content {
-  position: relative;
-  text-align: center;
-  max-width: 900px;
-  padding: 0 20px;
-}
+  /* HERO */
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 
-/* EYEBROW */
-.hero-eyebrow {
-  font-family: var(--sans);
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: var(--gold);
-  margin-bottom: 20px;
-}
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(rgba(15,42,20,0.75), rgba(15,42,20,0.85)),
+      url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=85') center/cover no-repeat;
+  }
 
-/* MAIN TITLE */
-.hero h1 {
-  font-family: var(--script);
-  font-size: clamp(4rem, 8vw, 7rem);
-  color: var(--white);
-  margin-bottom: 10px;
-}
+  .hero-content {
+    position: relative;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+  }
 
-/* SUBTITLE */
-.hero h2 {
-  font-family: var(--script);
-  font-size: 2.5rem;
-  color: var(--gold);
-  margin-bottom: 20px;
-}
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
 
-/* DESCRIPTION */
-.hero-desc {
-  font-family: var(--sans);
-  font-size: 15px;
-  color: rgba(255,255,255,0.75);
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
+  .hero h1 {
+    font-family: var(--script);
+    font-size: clamp(4rem, 8vw, 7rem);
+    color: var(--white);
+    margin-bottom: 10px;
+  }
 
-/* BUTTONS */
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  .hero h2 {
+    font-family: var(--script);
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
 
-.btn-gold {
-  background: linear-gradient(to bottom, var(--gold-light), var(--gold));
-  color: #0f2a14;
-  padding: 14px 36px;
-  border-radius: 8px;
-  font-family: var(--script);
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-}
+  .hero-desc {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
 
-.btn-outline {
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  padding: 14px 36px;
-  border-radius: 8px;
-  font-family: var(--script);
-  font-size: 20px;
-  background: transparent;
-  cursor: pointer;
-}
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-/* SCROLL */
-.hero-scroll {
-  position: absolute;
-  bottom: 30px;
-  text-align: center;
-  width: 100%;
-  font-family: var(--script);
-  color: var(--gold);
-  font-size: 18px;
-}
-</style>
+  .btn-gold {
+    background: linear-gradient(to bottom, var(--gold-light), var(--gold));
+    color: #0f2a14;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-family: var(--script);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-outline {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-family: var(--script);
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    font-family: var(--script);
+    color: var(--gold);
+    font-size: 18px;
+  }
+  </style>
+</head>
+
+<body>
 
 <section class="hero">
   <div class="hero-bg"></div>
@@ -138,3 +146,6 @@
     Scroll Down ↓
   </div>
 </section>
+
+</body>
+</html>
